@@ -4,11 +4,11 @@ import org.scalatest.FlatSpec
 import org.scalatest.Matchers
 import br.unb.cic.mhs.ast.ExpressaoLet
 import br.unb.cic.mhs.ast.ValorInteiro
-import br.unb.cic.mhs.ast.ExpressaoSoma
 import br.unb.cic.mhs.ast.Referencia
 import br.unb.cic.mhs.ast.ExpressaoLet
 import br.unb.cic.mhs.ast.Referencia
 import br.unb.cic.mhs.ast.ExpressaoLet
+import main.scala.br.unb.cic.mhs.ast.aritmetica.ExpressaoSoma
 
 /*
  * Classe de teste para expressoes do tipo Let

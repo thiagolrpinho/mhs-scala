@@ -1,9 +1,10 @@
 package br.unb.cic.mhs.ast
 
+import Visitor.MHSvisitor
 import br.unb.cic.mhs.memoria.Ambiente
 import br.unb.cic.mhs.memoria.AmbienteExpressao
 
-class ExpressaoLet(id : String , expNomeada: Expressao , corpo: Expressao) extends Expressao {
+class ExpressaoLet(val id : String , val expNomeada: Expressao , val corpo: Expressao) extends Expressao {
   override def avaliar() : Valor = {
     AmbienteExpressao.associar(id, expNomeada)
     return corpo.avaliar()
@@ -13,5 +14,8 @@ class ExpressaoLet(id : String , expNomeada: Expressao , corpo: Expressao) exten
     if(expNomeada.verificarTipo().equals(TErro)) 
       TErro
     else  corpo.verificarTipo()
-  
+
+  override def aceitar(visitor: MHSvisitor): Unit = {
+    visitor.visitar(this)
+  }
 }

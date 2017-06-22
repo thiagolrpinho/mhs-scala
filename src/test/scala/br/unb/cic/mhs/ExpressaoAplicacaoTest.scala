@@ -3,16 +3,17 @@ package br.unb.cic.mhs
 import org.scalatest.FlatSpec
 import org.scalatest.Matchers
 import br.unb.cic.mhs.ast.DecFuncao
-import br.unb.cic.mhs.ast.ExpressaoSoma
 import br.unb.cic.mhs.ast.ValorInteiro
 import br.unb.cic.mhs.ast.Referencia
 import br.unb.cic.mhs.memoria.AmbienteDecFuncao
 import br.unb.cic.mhs.ast.Aplicacao
+
 import scala.ref.Reference
 import br.unb.cic.mhs.ast.Referencia
 import br.unb.cic.mhs.ast.Referencia
 import br.unb.cic.mhs.ast.ExpressaoLet
 import br.unb.cic.mhs.ast.Expressao
+import main.scala.br.unb.cic.mhs.ast.aritmetica.ExpressaoSoma
 
 class ExpressaoAplicacaoTest extends FlatSpec with Matchers {
   

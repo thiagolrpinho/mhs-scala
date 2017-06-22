@@ -1,4 +1,7 @@
-package br.unb.cic.mhs.ast
+package main.scala.br.unb.cic.mhs.ast.aritmetica
+
+import Visitor.MHSvisitor
+import br.unb.cic.mhs.ast._
 
 
 class ExpressaoSoma(lhs : Expressao, rhs : Expressao) extends ExpressaoBinaria(lhs, rhs) {
@@ -16,5 +19,8 @@ class ExpressaoSoma(lhs : Expressao, rhs : Expressao) extends ExpressaoBinaria(l
     
     return if(t1.equals(TInteiro) && t2.equals(TInteiro)) TInteiro else TErro
           
+  }
+  override def aceitar(visitor: MHSvisitor): Unit = {
+    visitor.visitar(this)
   }
 }

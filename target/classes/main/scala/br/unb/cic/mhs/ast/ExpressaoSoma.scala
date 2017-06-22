@@ -1,5 +1,7 @@
 package br.unb.cic.mhs.ast
 
+import Visitor.MHSvisitor
+
 
 class ExpressaoSoma(lhs : Expressao, rhs : Expressao) extends ExpressaoBinaria(lhs, rhs) {
   /* essa implementacao eh fragil, pois nao verifica os tipos */
@@ -16,5 +18,8 @@ class ExpressaoSoma(lhs : Expressao, rhs : Expressao) extends ExpressaoBinaria(l
     
     return if(t1.equals(TInteiro) && t2.equals(TInteiro)) TInteiro else TErro
           
+  }
+  override def aceitar(visitor: MHSvisitor): Unit = {
+    visitor.visitar(this)
   }
 }
