@@ -1,4 +1,4 @@
-package test.scala.br.unb.cic.mhs
+package test.scala.br.unb.cic.mhs.Aritimetica
 
 import br.unb.cic.mhs.ast.ValorInteiro
 import main.scala.br.unb.cic.mhs.ast.aritmetica.ExpressaoSub

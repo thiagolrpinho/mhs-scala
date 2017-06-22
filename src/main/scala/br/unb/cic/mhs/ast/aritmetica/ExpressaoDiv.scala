@@ -1,7 +1,6 @@
-package main.scala.br.unb.cic.mhs.ast
+package main.scala.br.unb.cic.mhs.ast.aritmetica
 
 import br.unb.cic.mhs.ast.{Expressao, Valor, ValorInteiro}
-import main.scala.br.unb.cic.mhs.ast.aritmetica.ExpressaoSoma
 
 /**
   * Created by thiagoluis on 22/06/17.

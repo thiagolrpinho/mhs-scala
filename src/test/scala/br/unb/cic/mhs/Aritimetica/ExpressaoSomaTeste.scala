@@ -1,9 +1,8 @@
-package br.unb.cic.mhs
+package test.scala.br.unb.cic.mhs.Aritimetica
 
-import org.scalatest.FlatSpec
-import org.scalatest.Matchers
 import br.unb.cic.mhs.ast.ValorInteiro
 import main.scala.br.unb.cic.mhs.ast.aritmetica.ExpressaoSoma
+import org.scalatest.{FlatSpec, Matchers}
 
 class ExpressaoSomaTeste extends FlatSpec with Matchers {
   "Uma soma entre os valores 3 e 4" should "levar ao valor sete" in {
